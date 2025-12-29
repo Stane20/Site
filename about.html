@@ -1,61 +1,144 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Monde Comptable</title>
-    <meta name="description" content="Accompagnement professionnel pour PME, startups et entrepreneurs. Audit, comptabilité, fiscalité et conseils financiers fiables.">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monde Comptable</title>
+  <meta name="description" content="Accompagnement professionnel pour PME, startups et entrepreneurs. Audit, comptabilité, fiscalité et conseils financiers fiables.">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 
-  <body>
-        <!-- Hero / À propos -->
-    <!-- Section Titre -->
-<section class="py-12 bg-white">
-  <div class="container mx-auto text-center px-6 md:px-0">
-    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-      Stanislas Nouhlouigbeto
-    </h1>
-    <p class="text-xl md:text-2xl text-gray-700">
-      Auditeur comptable, fiscaliste et entrepreneur
-    </p>
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+  <!-- Hero section -->
+  <section class="relative w-full h-[200px]">
+    <img src="image/image1.jpg" alt="Stanislas Nouhlouigbeto – Auditeur comptable" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
+        QUI SOMMES-NOUS ?
+      </h1>
+      <p class="text-xl md:text-2xl text-white text-center">
+        Auditeur comptable, fiscaliste et entrepreneur
+      </p>
+    </div>
+  </section>
+
+<!-- Section Qui sommes-nous -->
+<section class="relative w-full py-20 bg-gray-50 -translate-y-8">
+  <div class="container mx-auto relative">
+
+    <!-- Texte décalé -->
+    <div class=" p-10 shadow-lg max-w-md min-h-[30rem] relative 
+                lg:translate-x-65 lg:translate-y-16">
+      <h2 class="text-4xl font-bold mb-1 relative inline-block">
+        Qui sommes-nous ?
+        <span class="absolute left-0 -bottom-6 w-56 h-[3px] bg-blue-900"></span>
+        <span class="absolute left-0 -bottom-12 w-1/4 h-[3px] bg-blue-500"></span>
+      </h2>
+
+      <p class="text-gray-800 text-lg leading-relaxed mt-14">
+        Notre cabinet est un cabinet d’assistance comptable et fiscale en ligne, dédié à l’accompagnement des entreprises, entrepreneurs, startups, ONG et particuliers dans la gestion efficace et conforme de leurs obligations comptables, fiscales et administratives
+      </p>
+    </div>
+
+    <!-- Traits décoratifs -->
+    <div class="absolute top-24 right-36 hidden lg:block -translate-x-130">
+      <div class="bg-blue-900 w-2.5 h-[22rem] rounded-xl translate-y-9"></div>
+      <div class="bg-blue-500 w-2.5 h-[22rem] ml-6 -mt-[24rem] rounded-xl -translate-y-3"></div>
+      <div class="bg-red-500 w-2.5 h-[22rem] ml-12 -mt-[24rem] rounded-xl translate-y-10"></div>
+    </div>
+
+    <!-- Image droite décalée vers la gauche -->
+    <div class="absolute top-24 right-16 w-72 h-[26rem] hidden lg:block 
+                lg:-translate-x-48">
+      <div class="absolute border-4 border-red-900 -top-6 -left-8 w-64 h-[26rem]"></div>
+      <img src="image/image4.jpg" alt="Portrait professionnel" class="object-cover w-full h-full rounded-3xl">
+    </div>
+
+  </div>
+</section>
+
+<!-- Section Vision & Mission -->
+<section class="relative w-full py-20 bg-gray-100">
+
+  <!-- Image à gauche -->
+  <img src="image/image2.jpg" alt="Vision et Mission" class="absolute top-16 left-45 w-80 h-100 object-cover rounded-4xl">
+
+  <!-- Texte à droite de l'image -->
+  <div class="ml-[35rem] space-y-10">
+
+    <!-- Notre Vision -->
+    <div>
+      <h2 class="text-2xl font-bold text-blue-700 mb-4">NOTRE VISION</h2>
+      <p class="text-gray-800 text-xl leading-relaxed">
+        Devenir un cabinet de référence en assistance comptable et fiscale en ligne en Afrique francophone, en rendant les services comptables accessibles, fiables et conformes aux normes en vigueur, afin d’accompagner durablement les entreprises, entrepreneurs et organisations dans leur croissance et leur sécurisation financière.
+      </p>
+    </div>
+
+    <!-- Notre Mission -->
+    <div>
+      <h2 class="text-2xl font-bold text-green-700 mb-4">NOTRE MISSION</h2>
+      <p class="text-gray-800 text-xl leading-relaxed">
+        Accompagner les entreprises, PME, startups, ONG et particuliers dans la gestion comptable, fiscale et administrative de leurs activités, grâce à des solutions digitales simples, sécurisées et conformes aux réglementations en vigueur, tout en offrant un service professionnel, réactif et personnalisé.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  
+
+      
+<!-- Section Nos valeurs et Principes -->
+<section class="bg-gray-50 py-20">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="flex flex-col md:flex-row items-start gap-12">
+      <!-- Texte valeurs à gauche -->
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-semibold text-blue-800 mb-6">NOS VALEURS</h2>
+        <ul class="space-y-2 text-gray-700 text-1xl">
+          <li><span class="font-bold">Professionnalisme :</span> offrir des services de qualité, fondés sur la compétence, la rigueur et le respect des normes comptables et fiscales.</li>
+          <li><span class="font-bold">Intégrité :</span> agir avec honnêteté, transparence et éthique dans toutes les relations avec les clients et les administrations.</li>
+          <li><span class="font-bold">Confidentialité :</span> garantir la protection et la sécurité des données financières et personnelles des clients.</li>
+          <li><span class="font-bold">Accessibilité :</span> proposer des services adaptés aux réalités des entreprises africaines, tant sur le plan financier que technologique.</li>
+          <li><span class="font-bold">Innovation :</span> utiliser les outils numériques pour simplifier la gestion comptable et améliorer l’expérience client.</li>
+          <li><span class="font-bold">Engagement :</span> s’investir pleinement dans la réussite et la pérennité des activités des clients.</li>
+        </ul>
+      </div>
+
+      <!-- Image à droite -->
+      <div class="md:w-1/2 flex justify-end">
+        <img src="image/image3.jpg" alt="Nos valeurs" class="rounded-3xl object-cover w-full h-[28rem]">
+      </div>
+    </div>
   </div>
 </section>
 
 
-    <section class="py-16 bg-gray-100">
-  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 md:px-0">
-    
-    <!-- Bloc 1 : texte -->
-    <div class="flex items-center justify-center">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Titre du texte 1</h2>
-        <p class="text-gray-700">Description ou introduction du premier bloc texte.</p>
-      </div>
-    </div>
+<!-- Section Principes de fonctionnement -->
+<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-start bg-gray-50">
+  <!-- Image à gauche -->
+  <div class="flex justify-center items-center">
+    <img src="image/image4.jpg" alt="Principes de fonctionnement" class="rounded-3xl object-cover w-full h-[28rem]">
+  </div>
 
-    <!-- Bloc 2 : image -->
-    <div>
-      <img src="image/image4.jpg" alt="Image droite haut" class="w-full h-auto rounded-lg object-cover">
-    </div>
-
-    <!-- Bloc 3 : image -->
-    <div>
-      <img src="image/image3.jpg" alt="Image gauche bas" class="w-full h-auto rounded-lg object-cover">
-    </div>
-
-    <!-- Bloc 4 : texte -->
-    <div class="flex items-center justify-center">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Titre du texte 2</h2>
-        <p class="text-gray-700">Description ou texte du deuxième bloc.</p>
-      </div>
-    </div>
-
+  <!-- Texte principes à droite -->
+  <div class="translate-y-9">
+    <h2 class="text-3xl font-semibold text-blue-800 mb-6">NOS PRINCIPES</h2>
+    <ul class="space-y-4 text-gray-700 text-1xl">
+      <li><span class="font-bold">Conformité réglementaire :</span> respect strict des lois, règlements fiscaux et normes comptables en vigueur (SYSCOHADA, fiscalité locale, etc.).</li>
+      <li><span class="font-bold">Orientation client :</span> écoute active des besoins et accompagnement personnalisé.</li>
+      <li><span class="font-bold">Réactivité :</span> traitement rapide des demandes et respect des délais légaux et contractuels.</li>
+      <li><span class="font-bold">Clarté et pédagogie :</span> expliquer simplement les obligations comptables et fiscales afin de faciliter la prise de décision du client.</li>
+      <li><span class="font-bold">Amélioration continue :</span> mise à jour permanente des compétences et des outils pour garantir des prestations performantes.</li>
+    </ul>
+  </div>
+  
   </div>
 </section>
 
 
- 
-
-  </body>
+  
+</body>
+</html>

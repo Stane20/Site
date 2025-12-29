@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Monde Comptable</title>
+
+  <!-- Tailwind CDN (prototype). Pour production, builder avec purge -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER : image de fond + voile blanc flouté + titre -->
+  <header class="relative w-full h-full md:h-72 lg:h-96 overflow-hidden">
+    <!-- background image -->
+    <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('image/image2.jpg');"></div>
+
+    <!-- voile blanc semi-transparent + blur -->
+    <div class="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+
+    <!-- Titre centré -->
+    <div class="relative z-10 flex flex-col justify-end  px-20 pb-28 h-full">
+      <h1 class="text-3xl md:text-4xl lg:text-7xl font-extrabold text-gray-900">Contacts</h1>
+    
+    <!-- 2 traits -->
+        <div class="mt-3">
+            <div class="w-36 h-0.5 bg-red-600 "></div>
+            <div class="w-1/2 h-0.5 bg-red-600 mt-3"></div>
+        </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTACT SECTION -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+  <div class="flex flex-col lg:flex-row items-start gap-12">
+
+    <!-- LEFT: Bloc bleu foncé -->
+    <aside class="w-full lg:w-1/2 bg-[#08214a] text-white rounded-xl p-16 shadow h-[900px]">
+      <h2 class="text-4xl font-semibold mb-4 border-b border-white/80 pb-2 mt-16">
+        Informations de contact
+      </h2>
+
+      <!-- téléphone 1 -->
+      <div class="flex items-center gap-5 mt-20">
+        <img src="icons/phone.svg" alt="Téléphone" class="w-5 h-5 shrink-0" />
+        <div class="text-white/90 hover:text-white transition text-3xl">
+          +229 01 68 54 86 98
+        </div>
+      </div>
+
+      <!-- téléphone 2 -->
+      <div class="flex items-center gap-5 mt-20">
+        <img src="icons/phone.svg" alt="Téléphone" class="w-5 h-5 shrink-0" />
+        <div class="text-white/90 hover:text-white transition text-3xl">
+          +229 01 91 28 83 46
+        </div>
+      </div>
+
+      <!-- email -->
+      <div class="flex items-center gap-5 mt-20">
+        <img src="icons/mail.svg" alt="Email" class="w-5 h-5 shrink-0" />
+        <div class="text-white/90 hover:text-white transition text-2xl">
+          stanislasnouhlouigbeto@gmail.com
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT: Formulaire -->
+    <section class="w-full lg:w-1/2 bg-white rounded-xl shadow p-8 h-[900px]">
+      <form class="space-y-6" action="#" method="post" novalidate>
+
+        <!-- Prénom + Nom -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="prenom" class="block text-sm font-medium text-gray-700">Prénom</label>
+            <input id="prenom" name="prenom" type="text" required
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" />
+          </div>
+
+          <div>
+            <label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+            <input id="nom" name="nom" type="text" required
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" />
+          </div>
+        </div>
+
+        <!-- Email + Téléphone -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Adresse de messagerie</label>
+            <input id="email" name="email" type="email" required
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" />
+          </div>
+
+          <div>
+            <label for="telephone" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
+            <input id="telephone" name="telephone" type="tel" required
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600" />
+          </div>
+        </div>
+
+        <!-- Intéressé(e) par -->
+        <div>
+          <span class="block text-sm font-medium text-gray-700 mb-2">Intéressé(e) par :</span>
+          <div class="flex flex-wrap gap-4">
+            <label class="inline-flex items-center gap-2 text-gray-700">
+              <input type="checkbox" name="interet" value="services" class="h-4 w-4 text-blue-600 border-gray-300 rounded" />
+              <span>Nos services</span>
+            </label>
+
+            <label class="inline-flex items-center gap-2 text-gray-700">
+              <input type="checkbox" name="interet" value="conseils" class="h-4 w-4 text-blue-600 border-gray-300 rounded" />
+              <span>Nos conseils</span>
+            </label>
+
+            <label class="inline-flex items-center gap-2 text-gray-700">
+              <input type="checkbox" name="interet" value="discuter" class="h-4 w-4 text-blue-600 border-gray-300 rounded" />
+              <span>Pour discuter</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="message" name="message" rows="6" required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-600 focus:ring-blue-600"></textarea>
+        </div>
+
+        <!-- Bouton -->
+        <div class="pt-2">
+          <button type="submit"
+                  class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Envoyer le message
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </div>
+</main> 
+  </div>
+</main>
+
+
+  <!-- simple footer (optionnel) -->
+  <footer class="max-w-7xl mx-auto px-6 pb-12 text-sm text-gray-500">
+    <p>© 2025 Monde Comptable. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

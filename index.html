@@ -3,253 +3,248 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Monde Comptable</title>
+    <title>Monde Comptable</title>
     <meta name="description" content="Accompagnement professionnel pour PME, startups et entrepreneurs. Audit, comptabilité, fiscalité et conseils financiers fiables.">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white font-sans text-gray-800 pt-20">
-    <header class="bg-white shadow-md fixed  w-full py-3 z-50">
-      <div class="flex items-center justify-between mx-auto px-8">
-        <!-- Le logo -->
-        <div class="ml-12">
-          <a href="index.html" class="text-3xl font-bold text-primary"> Logo</a>
+
+  <body class="bg-white font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full h-20 z-40">
+      <div class="max-w-7xl mx-auto flex items-center justify-between h-full px-6 md:px-8">
+        <div>
+          <a href="index.html" class="text-2xl md:text-3xl font-bold text-blue-700">Logo</a>
         </div>
 
-        <!-- Le menu -->
-        <nav class="flex space-x-8">
-        <a href="index.html" class="text-gray-900 hover:text-blue-400 font-medium"> Accueil</a>
-        <a href="about.html" class="text-gray-900 hover:text-blue-400 font-medium" > A propos</a>
-        <a href="service.html" class="text-gray-900 hover:text-blue-400 font-medium"> Nos Services</a>
-        <a href="contact.html" class="text-gray-900 hover:text-blue-400 font-medium"> Nous contacter</a>
-        <a href="blog.html" class="text-gray-900 hover:text-blue-400 font-medium"> Blog</a>
+        <!-- correction: suppression cm -->
+        <nav class="hidden md:flex items-center space-x-10">
+          <a href="index.html" class="text-gray-900 hover:text-blue-400 font-medium">Accueil</a>
+          <a href="about.html" class="text-gray-900 hover:text-blue-400 font-medium">A propos</a>
+          <a href="service.html" class="text-gray-900 hover:text-blue-400 font-medium">Nos Services</a>
+          <a href="contact.html" class="text-gray-900 hover:text-blue-400 font-medium">Nous contacter</a>
+          <a href="blog.html" class="text-gray-900 hover:text-blue-400 font-medium">Blog</a>
         </nav>
 
+        <!-- mobile -->
+        <div class="md:hidden"></div>
       </div>
-    </header> 
-    
-    <!-- Hero Section -->
-    <section class="relative bg-cover bg-center h-screen" style="background-image: url('image/image2.jpg');" >
-      <div class="absolute inset-0" style="background-color: rgba(12, 0, 0, 0.1); pointer-events: none;"></div>
+    </header>
 
-      <div class="relative max-w-7xl mx-auto px-8 py-24 flex flex-col items-start justify-center min-h-full">
-    
-    <!-- Titre -->
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-      Audit, Comptabilité et Fiscalité — <br class="hidden md:block">Votre partenaire de confiance pour une gestion financière claire et sécurisée.
-        </h1>
+    <!-- padding corrigé -->
+    <main class="pt-20">
 
-    <!-- Sous-texte -->
-        <p class="text-lg md:text-xl text-gray-200 mb-8">
-       Accompagnement professionnel pour les PME, startups et entrepreneurs.
+      <!-- Hero -->
+      <section class="relative w-full">
+        <div class="h-[60vh] md:h-screen w-full relative overflow-hidden">
+          <img src="image/image2.jpg" alt="Cabinet d’audit, comptabilité et fiscalité" class="absolute inset-0 w-full h-full object-cover"/>
+          <div class="absolute inset-0 bg-black/50"></div>
+
+          <div class="relative max-w-7xl mx-auto px-6 md:px-8 h-full flex items-center">
+            <div class="text-white max-w-3xl">
+              <h1 class="text-3xl md:text-5xl font-bold mb-4">
+                Audit, Comptabilité et Fiscalité —<br class="hidden md:block"/>
+                Votre partenaire de confiance pour une gestion financière claire et sécurisée.
+              </h1>
+              <p class="text-lg md:text-xl text-gray-200 mb-6">
+                Accompagnement professionnel pour les PME, startups et entrepreneurs.
+              </p>
+              <a href="contact.html" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-500 transition">
+                Nous contacter
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <p class="text-8xl text-black-100 max-w-5xl text-center translate-y-5">
+            PARTENAIRE DE VOTRE <br> PERFORMANCE FINANCIERE <br> DURABLE
         </p>
+        <!-- Pourquoi nous choisir -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 text-center">
+          <h2 class="text-2xl md:text-4xl font-bold mb-10">Pourquoi nous choisir ?</h2>
 
-    <!-- Bouton CTA -->
-        <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-500 transition duration-300">
-        Nous contacter
-        </a>
-      </div>
-    </section>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
+            <div class="bg-white rounded-xl shadow-2xl p-8 min-h-[14rem] md:-translate-y-4">
+              <h3 class="text-xl font-semibold mb-4">Expertise</h3>
+              <p class="text-gray-700">Des années d’expérience en audit, comptabilité et fiscalité.</p>
+            </div>
 
-  <!-- Bloc pour présenter les services -->
-    
-    <section class="py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-8">
-    <!-- Titre de la section -->
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-      Nos Services
-      </h2>
+            <div class="bg-white rounded-xl shadow-2xl p-8 min-h-[14rem] md:translate-y-6">
+              <h3 class="text-xl font-semibold mb-4">Discrétion & confidentialité</h3>
+              <p class="text-gray-700">Vos données financières sont protégées.</p>
+            </div>
 
-      <!-- Grille des services -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-25">
+            <div class="bg-white rounded-xl shadow-2xl p-8 min-h-[14rem] md:translate-y-4">
+              <h3 class="text-xl font-semibold mb-4">Rigueur professionnelle</h3>
+              <p class="text-gray-700">Standards stricts et travail fiable.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-2xl p-8 min-h-[14rem] md:-translate-y-6">
+              <h3 class="text-xl font-semibold mb-4">Accompagnement personnalisé</h3>
+              <p class="text-gray-700">Solutions adaptées à vos besoins.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-10">Nos Services</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-blue-600 rounded-xl shadow-2xl p-8 flex flex-col gap-4">
+              <div class="text-3xl">🔎</div>
+              <h3 class="text-xl font-semibold text-white">Audit & Contrôle interne</h3>
+              <p class="text-white">Audit financier, audit organisationnel et revue des procédures internes.</p>
+              <a href="service.html" class="mt-auto text-white underline">En savoir plus</a>
+            </div>
+
+            <div class="bg-green-500 rounded-xl shadow-2xl p-8 flex flex-col gap-4">
+              <div class="text-3xl">📊</div>
+              <h3 class="text-xl font-semibold text-white">Assistance comptable</h3>
+              <p class="text-white">Comptabilité mensuelle, calcul des salaires et tenue des états financiers.</p>
+              <a href="service.html" class="mt-auto text-white underline">En savoir plus</a>
+            </div>
+
+            <div class="bg-yellow-500 rounded-xl shadow-2xl p-8 flex flex-col gap-4">
+              <div class="text-3xl">🧾</div>
+              <h3 class="text-xl font-semibold text-white">Assistance fiscale</h3>
+              <p class="text-white">Déclarations fiscales, optimisation fiscale et assistance lors des contrôles.</p>
+              <a href="service.html" class="mt-auto text-white underline">En savoir plus</a>
+            </div>
+
+            <div class="bg-purple-600 rounded-xl shadow-2xl p-8 flex flex-col gap-4">
+              <div class="text-3xl">💬</div>
+              <h3 class="text-xl font-semibold text-white">Conseil & Accompagnement</h3>
+              <p class="text-white">Mise en place de systèmes de gestion, stratégie financière et formations internes.</p>
+              <a href="service.html" class="mt-auto text-white underline">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Boost -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col lg:flex-row items-center gap-12">
+          <div class="relative w-full lg:w-1/2 flex justify-center items-start">
+            <div class="bg-white border-4 border-blue-600 rounded-2xl p-6 shadow-xl w-[420px] h-[300px] -ml-16 pt-14"></div>
+            <img src="image/image4.jpg" loading="lazy" alt="Analyse financière et performance" class="absolute -top-8 left-1/2 -translate-x-1/2 w-[420px] max-w-lg rounded-2xl shadow-2xl ml-7"/>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
+              Boostez la performance financière de votre entreprise !
+            </h2>
+            <ul class="text-gray-700 list-disc list-inside space-y-2 mb-6">
+              <li>Analyser vos états financiers</li>
+              <li>Organiser votre comptabilité</li>
+              <li>Réduire vos charges fiscales légalement</li>
+              <li>Prendre des décisions stratégiques</li>
+            </ul>
+            <p class="text-gray-800 mb-6">Avec notre expert en comptabilité, fiscalité et audit, chaque euro compte.</p>
+            <a href="contact.html" class="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-500">
+              Prenez rendez-vous dès maintenant
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Actualités -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+          <h2 class="text-2xl md:text-4xl font-bold text-center mb-10">Actualités et Conseils Comptables</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+              <img src="image/image2.jpg" loading="lazy" alt="Erreurs fiscales courantes" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Les erreurs fiscales courantes</h3>
+                <p class="text-gray-700 mb-4">Découvrez les erreurs les plus fréquentes lors des déclarations fiscales.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">Lire plus</a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+              <img src="image/image2.jpg" loading="lazy" alt="Audit financier" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Pourquoi faire un audit régulier ?</h3>
+                <p class="text-gray-700 mb-4">Sécurisez vos finances et améliorez la transparence.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">Lire plus</a>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+              <img src="image/image2.jpg" loading="lazy" alt="Gestion comptable PME" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Gestion comptable pour PME</h3>
+                <p class="text-gray-700 mb-4">Conseils pratiques pour une gestion efficace.</p>
+                <a href="#" class="text-blue-600 font-medium hover:underline">Lire plus</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       
-      <!-- Bloc 1 -->
-      <div class="bg-blue-600 rounded-xl shadow-lg p-15 flex flex-col items-start hover:shadow-2xl transition duration-300">
-        <span class="text-3xl mb-4">🔎</span>
-        <h3 class="text-xl font-semibold text-white mb-2">Audit & Contrôle interne</h3>
-        <p class="text-white mb-4">
-          Audit financier, audit organisationnel et revue des procédures internes.
-        </p>
-        <a href="services.html" class="font-medium underline text-white">
-          En savoir plus
-        </a>
-      </div>
 
-      <!-- Bloc 2 -->
-      <div class="bg-green-500 rounded-xl shadow-lg p-15 flex flex-col items-start hover:shadow-2xl transition duration-300">
-        <span class="text-3xl mb-4">📊</span>
-        <h3 class="text-xl font-semibold text-white mb-2">Assistance comptable</h3>
-        <p class="text-white mb-4">
-          Comptabilité mensuelle, calcul des salaires et tenue des états financiers.
-        </p>
-        <a href="services.html" class="font-medium underline text-white">
-          En savoir plus
-        </a>
-      </div>
+    </main>
 
-      <!-- Bloc 3 -->
-      <div class="bg-yellow-500 rounded-xl shadow-lg p-15 flex flex-col items-start hover:shadow-2xl transition duration-300">
-        <span class="text-3xl mb-4">🧾</span>
-        <h3 class="text-xl font-semibold text-white mb-2">Assistance fiscale</h3>
-        <p class="text-white mb-4">
-          Déclarations fiscales, optimisation fiscale et assistance lors des contrôles.
-        </p>
-        <a href="services.html" class="font-medium underline text-white">
-          En savoir plus
-        </a>
-      </div>
-
-        <!-- Bloc 4 -->
-        <div class="bg-purple-600 rounded-xl shadow-lg p-15 flex flex-col items-start hover:shadow-2xl transition duration-300">
-        <span class="text-3xl mb-4">💬</span>
-        <h3 class="text-xl font-semibold text-white mb-2">Conseil & Accompagnement</h3>
-        <p class="text-white mb-4">
-          Mise en place de systèmes de gestion, stratégie financière et formations internes.
-        </p>
-        <a href="services.html" class="font-medium underline text-white">
-          En savoir plus
-        </a>
+    <!-- Footer -->
+    <footer class="relative mt-16">
+      <div class="relative">
+        <div class="absolute inset-0 h-[300px] md:h-[610px] overflow-hidden">
+          <img src="image/image4.jpg" loading="lazy" alt="Cabinet comptable à Cotonou" class="w-full h-full object-cover"/>
+          <div class="absolute inset-0 bg-blue-900/80"></div>
         </div>
 
+        <div class="relative z-10 text-gray-200 pt-16">
+          <div class="max-w-7xl mx-auto px-6 md:px-8 py-16 grid grid-cols-1 md:grid-cols-[1fr_20px_1fr_1fr_1fr] gap-8">
+            <div>
+              <h2 class="text-xl md:text-4xl font-semibold text-white mb-8">Stanislas Nouhlouigbeto</h2>
+              <p class="text-white">Auditeur comptable & fiscaliste. Conseil, expertise et accompagnement.</p>
+            </div>
+
+            <div class="hidden md:block bg-white/30 w-px h-[330px] mx-auto"></div>
+
+            <div>
+              <h3 class="text-3xl font-semibold text-white mb-6">Navigation</h3>
+              <ul class="space-y-2">
+                <li><a href="index.html" class="hover:text-black">Accueil</a></li>
+                <li><a href="blog.html" class="hover:text-black">Actualités</a></li>
+                <li><a href="service.html" class="hover:text-black">Services</a></li>
+                <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-semibold text-white mb-6">Services</h3>
+              <ul class="space-y-2">
+                <li><a href="service.html" class="hover:text-black">Audit & Comptabilité</a></li>
+                <li><a href="service.html" class="hover:text-black">Déclarations fiscales</a></li>
+                <li><a href="service.html" class="hover:text-black">Analyse financière</a></li>
+                <li><a href="service.html" class="hover:text-black">Accompagnement administratif</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-6">Contact</h3>
+              <ul class="space-y-2">
+                <li>Email : stanislasnouhlouigbeto@gmail.com</li>
+                <li>Téléphone : +229 01 68 54 86 98</li>
+                <li>Adresse : Cotonou, Bénin</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-t border-white/30 py-4">
+            <p class="text-center text-sm">© 2025 Stanislas Nouhlouigbeto. Tous droits réservés.</p>
+          </div>
         </div>
-        </div>
-    </section> 
-        
-    <!-- Section Boostez vos finances -->
-    <section class="py-24 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-start gap-12 relative">
-
-    <!-- Bloc superposé sous l'image (gauche) -->
-    <div class="relative lg:w-1/2">
-      <div class="bg-white border-4 border-blue-600 rounded-xl p-8 pt-32 shadow-xl"></div>
-      <!-- Image superposée -->
-      <img src="image/image4.jpg" alt="Image superposée"
-           class="absolute -top-24 left-1/2 transform -translate-x-1/2 w-3/4 rounded-xl shadow-lg z-10">
-    </div>
-
-    <!-- Bloc texte à droite -->
-    <div class="lg:w-1/2 flex flex-col justify-center">
-      <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-        Boostez la performance financière de votre entreprise !
-      </h2>
-
-      <ul class="text-gray-700 text-lg md:text-xl mb-6 list-disc list-inside space-y-2">
-        <li>Analyser vos états financiers pour garantir leur fiabilité avant dépôt</li>
-        <li>Organiser votre comptabilité de manière claire et efficace</li>
-        <li>Réduire vos charges fiscales en toute légalité</li>
-        <li>Prendre des décisions stratégiques grâce à des conseils personnalisés</li>
-      </ul>
-
-      <p class="text-gray-800 text-lg md:text-xl mb-6">
-        Avec notre expert en comptabilité, fiscalité et audit, chaque euro compte.
-      </p>
-
-      <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-500 transition duration-300">
-        Prenez rendez-vous dès maintenant
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-    
-    <!-- Pourquoi nous choisir -->
-    <section class="py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-8 text-center">
-      <!-- Titre -->
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-      Pourquoi nous choisir ?
-      </h2>
-
-      <!-- Grille des avantages -->
-      <div class="grid  md:grid-cols-4  gap-10">
-      
-      <!-- Avantage 1 -->
-      <div class="bg-white rounded-xl shadow-lg p-12 flex flex-col items-center hover:shadow-2xl transition duration-300 w-full ">
-        <span class="text-4xl mb-4">🎓</span>
-        <h3 class="text-5xl font-semibold text-gray-900 mb-2">Expertise</h3>
-        <p class="text-gray-700 text-center">
-          Des années d’expérience en audit, comptabilité et fiscalité.
-        </p>
       </div>
+    </footer>
 
-      <!-- Avantage 2 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition duration-300 w-full ">
-        <span class="text-4xl mb-4">🤫</span>
-        <h3 class="text-4xl font-semibold text-gray-900 mb-2">Discrétion & confidentialité</h3>
-        <p class="text-gray-700 text-center">
-          Vos données et informations financières sont toujours protégées.
-        </p>
-      </div>
-
-      <!-- Avantage 3 -->
-      <div class="bg-white rounded-xl shadow-lg p-15 flex flex-col items-center hover:shadow-2xl transition duration-300 w-full">
-        <span class="text-xl mb-4">✅</span>
-        <h3 class="text-4xl font-semibold text-gray-900 mb-2">Rigueur professionnelle</h3>
-        <p class="text-gray-700 text-center">
-          Nous suivons des standards stricts pour garantir un travail fiable et précis.
-        </p>
-      </div>
-
-      <!-- Avantage 4 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition duration-300 w-full">
-        <span class="text-4xl mb-4">🤝</span>
-        <h3 class="text-4xl font-semibold text-gray-900 mb-2">Accompagnement personnalisé</h3>
-        <p class="text-gray-700 text-center">
-          Nous adaptons nos solutions à vos besoins spécifiques pour une gestion optimale.
-        </p>
-      </div>
-
-        </div>
-    </div>
-  </section>
-    <!-- Section Témoignages -->
-  <section class="py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-8 text-center">
-      <!-- Titre -->
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-      Ce que disent nos clients
-      </h2>
-
-      <!-- Grille des témoignages -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Témoignage 1 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition duration-300">
-        <p class="text-gray-700 mb-6">
-          "L'équipe de Monde Comptable nous a aidés à organiser nos finances et à optimiser nos déclarations fiscales. Très professionnels !"
-        </p>
-        <h3 class="text-xl font-semibold text-gray-900">Jean Dupont</h3>
-        <span class="text-gray-500">CEO, Startup X</span>
-      </div>
-
-      <!-- Témoignage 2 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition duration-300">
-        <p class="text-gray-700 mb-6">
-          "Grâce à leur accompagnement, notre comptabilité est claire et fiable. Je recommande vivement Monde Comptable."
-        </p>
-        <h3 class="text-xl font-semibold text-gray-900">Marie Petit</h3>
-        <span class="text-gray-500">Fondatrice, PME Y</span>
-      </div>
-
-      <!-- Témoignage 3 -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center hover:shadow-2xl transition duration-300">
-        <p class="text-gray-700 mb-6">
-          "Professionnalisme et rigueur sont au rendez-vous. Leur expertise en audit et fiscalité est précieuse pour notre entreprise."
-        </p>
-        <h3 class="text-xl font-semibold text-gray-900">Aliou Sarr</h3>
-        <span class="text-gray-500">Directeur financier, Entreprise Z</span>
-      </div>
-
-      </div>
-      </div>
-  </section>
-    
-    <section>
-      <div>
-        <p class="text-red-500">Bonjour</p>
-      </div>
-    </section>
-    
-  </body>
+  </body>
 </html>
